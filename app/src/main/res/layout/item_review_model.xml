@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="18dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/person"
+                android:scaleType="centerCrop" />
+
+            <RatingBar
+                android:id="@+id/rrating"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:max="5"
+                android:rating="5"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_marginTop="50dp" />
+
+            <!--            <RatingBar-->
+            <!--                android:id="@+id/ratingBar"-->
+            <!--                android:isIndicator="false"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:layout_marginLeft="20dp"/>-->
+
+            <TextView
+                android:id="@+id/rname"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="Adesh"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="23dp"
+                style="bold"
+                android:layout_toRightOf="@+id/profile"
+                />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/white"
+                android:visibility="visible"
+                android:id="@+id/rpopup"
+                android:layout_toRightOf="@id/rname"
+                android:src="@drawable/vert" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/rdate"
+                android:layout_toRightOf="@id/rrating"
+                android:text="5/2/2020"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:id="@+id/rreview"
+                android:text="It's awesome app"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

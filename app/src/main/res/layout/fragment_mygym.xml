@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mygym">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="7dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100Pasos"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#f4be07"
+                    android:id="@+id/name_hospital"
+                    android:layout_marginBottom="7dp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:padding="10dp"
+                    android:src="@drawable/logo"
+                    android:id="@+id/img_hospital"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="fitStart"
+
+
+
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="7dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+
+                    android:paddingLeft="5dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Toledo,Spain"
+                        android:paddingLeft="6dp"
+                        android:layout_weight="1"
+                        android:paddingStart="6dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="14sp"
+                        android:id="@+id/location_hospital"
+                        android:layout_marginTop="3dp"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="show"
+
+                        android:id="@+id/showmap"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:elevation="2dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="7dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:id="@+id/about_hospital"
+                        android:text="About 100Pasos"
+                        />
+                    <!--<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rate"
+
+                        android:id="@+id/showrate"
+                        />-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/showrate"
+                        android:layout_margin="7dp"
+                        android:padding="10dp"
+                        android:background="#B68080"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#F6C1C1"
+                            android:padding="4dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/star_filled"
+                                android:id="@+id/revstar"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+
+                                android:id="@+id/revrat"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="17dp"
+                                android:src="@drawable/play"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:id="@+id/revperson"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yest its awesome"
+                    android:padding="7dp"
+                    android:textSize="14sp"
+                    android:id="@+id/about_hospital_desc"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:text="Packages"
+            android:textSize="17sp"
+            android:background="#fff"
+            android:padding="5dp"
+            android:id="@+id/hos_treatment_lbl"
+            android:textStyle="bold"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/hospital_details_recycler"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

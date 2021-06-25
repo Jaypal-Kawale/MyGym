@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/person"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jaypal Kawale"
+            android:padding="5dp"
+            android:id="@+id/iname"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vert"
+            android:id="@+id/popbtn"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="5dp"
+       android:layout_margin="5dp"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Morning"
+           android:layout_weight="1"
+           android:padding="5dp"
+           android:id="@+id/ibatch"
+           android:layout_margin="5dp"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="14/12/2020"
+           android:padding="5dp"
+           android:id="@+id/ifinish"
+           android:layout_margin="5dp"
+           android:layout_weight="1"
+           />
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Money Remain :-"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/mremain2"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="5dp"
+            android:id="@+id/mremain"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

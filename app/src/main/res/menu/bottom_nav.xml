@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Recent"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/person"
+        />
+    <item
+        android:title="Unpaid"
+        android:id="@+id/nav_remain"
+        android:icon="@drawable/person"
+        />
+    <item
+        android:title="All"
+        android:id="@+id/nav_destination"
+        android:icon="@drawable/person"
+        />
+    <item android:title="Expired "
+        android:id="@+id/nav_treatment"
+        android:icon="@drawable/person"
+        />
+    <item android:title="Profile "
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/person"
+        />
+
+
+
+</menu>

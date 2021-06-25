@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".client_details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/pimage"
+
+                    android:src="@drawable/add" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dname"
+                    android:text="Name"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Receipt No :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drno"
+                    android:text="Receipt no."
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Money Paid :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dmoney"
+                    android:hint="Enter Money"
+                    android:text="Money"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Money Remained :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Money"
+                    android:text="Money"
+                    android:id="@+id/dremain"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shift :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dbatch"
+                    android:text="Morning"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mob. No. :-"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dmob"
+                android:text="9370147107"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Joining Date :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/djdate"
+                    android:text="11/12/2020"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finishing Date :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/dfdate"
+                    android:text="11/12/2020"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Updated Date :-"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/dudate"
+                    android:text="11/12/2020"
+                    />
+            </LinearLayout>
+            <!--  <DatePicker
+                  android:layout_width="400dp"
+                  android:layout_height="400dp"
+                  android:id="@+id/datepicker"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="center_horizontal"
+                  />
+              <DatePicker
+                  android:layout_width="400dp"
+                  android:layout_height="400dp"
+                  android:id="@+id/datepicker2"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="center_horizontal"
+                  />-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:id="@+id/dadd"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

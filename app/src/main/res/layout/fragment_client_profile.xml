@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".client_profile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/profileimage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/jerry" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="140dp"
+            android:layout_gravity="center_vertical"
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:paddingTop="2dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="1dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Mr. Jerry"
+            android:id="@+id/proname"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/editname"
+            android:src="@drawable/edit"
+            android:layout_gravity="center_vertical"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_margin="1dp"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:id="@+id/pname"
+            android:layout_weight="1"
+
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mob.no"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9370147107"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:id="@+id/pmob"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jay@gmail.com"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+
+            android:id="@+id/pemail"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Mobile No"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+         android:id="@+id/change_mob"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/change_pass"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/share"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="log out"
+    android:id="@+id/logout"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+    />
+</LinearLayout>
